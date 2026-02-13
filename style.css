@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  background: #131b21;
+  font-family: "Great Vibes", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding: 3%;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+#Footer_group_1_,
+[id^="PinkFlowerGroup"],
+[id^="BaseGroup"] path,
+[id^="LeafGroup"] path,
+path[id^="Stroke"],
+g[id^="BudGroup"] g[id^="BudGroup"] g[id^="Bud"],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^="Dots"],
+[id^="Flourish"] {
+  visibility: hidden;
+}
+
+.content {
+  margin-top: -50vh;
+  background-color: transparent;
+}
+
+.title {
+  color: yellow;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+  background-color: transparent;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  color: yellow;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.3vw;
+  background-color: transparent;
+  margin: 0;
+}
+
+.boton {
+  font-size: 2.2em;
+  padding: 10px 15px;
+  margin: 20px auto;
+  border: none;
+  background-color: #ff3366;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  display: block;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 6vw;
+  }
+  
+  .description {
+    font-size: 3vw;
+  }
+  
+  .boton {
+    font-size: 1em;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 7vw;
+  }
+  
+  .description {
+    font-size: 5vw; 
+  }
+
+  .boton {
+    font-size: 0.8em;
+    width: 70%;
+  }
+}
