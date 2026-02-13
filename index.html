@@ -9,9 +9,21 @@
   </head>
     
   <body>
-    <audio autoplay loop>
-      <source src="audio.mp3" type="audio/mpeg">
-    </audio>
+
+    <audio id="bgm" src="audio.mp3" loop></audio>
+
+<script>
+const audio = document.getElementById("bgm");
+
+function start() {
+  audio.play();
+}
+
+document.body.addEventListener("click", start, { once:true });
+document.body.addEventListener("touchstart", start, { once:true });
+</script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
